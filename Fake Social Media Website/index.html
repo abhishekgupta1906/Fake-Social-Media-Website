@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Profile Detector</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add CSS rules for section headings */
+        .sections-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            /* Adjust the margin as needed */
+        }
+
+        .sections-container section {
+            margin: 0;
+            padding: 10px;
+            /* Add padding to the sections */
+            border-radius: 5px;
+            /* Add rounded corners to the sections */
+            flex: 1;
+            text-align: center;
+            /* Center align text */
+        }
+
+        /* Add CSS for section heading styles */
+        section h2 {
+            font-size: 20px;
+            color: #fff;
+            /* Text color */
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+            margin: 0;
+            /* Remove margin to align text in the center */
+        }
+
+        /* Define background colors for each section */
+        #about {
+            background-color: #007bff;
+        }
+
+        #profile-analysis {
+            background-color: #28a745;
+        }
+
+        #faq {
+            background-color: #ffc107;
+        }
+
+        #contact-section {
+            background-color: #dc3545;
+        }
+
+        /* Add animation for background */
+        body {
+            background: linear-gradient(45deg,
+                    #ff2d55,
+                    /* Red */
+                    #ffa801,
+                    /* Orange */
+                    #05f105,
+                    /* Green */
+                    #0099cc,
+                    /* Blue */
+                    #560bad,
+                    /* Purple */
+                    #f31b9c,
+                    /* Pink */
+                    #ffe700
+                    /* Yellow */
+                );
+            background-size: 600% 600%;
+            animation: gradientAnimation 2s infinite;
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+
+
+        /* Additional styles */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+            /* Center align text */
+        }
+
+        .profile-analysis-section {
+            background: linear-gradient(45deg,
+                    #ff2d55,
+                    /* Red */
+                    #ffaa00,
+                    /* Orange */
+                    #05f105,
+                    /* Green */
+                    #0099cc,
+                    /* Blue */
+                    #560bad,
+                    /* Purple */
+                    #f31b9c,
+                    /* Pink */
+                    #ffe700
+                    /* Yellow */
+                );
+            background-size: 600% 600%;
+            animation: gradientAnimation 2s infinite;
+            margin: 20px auto;
+            padding: 20px;
+            border: 2px solid #fff;
+            max-width: 800px;
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+
+        .contact-section {
+            background: linear-gradient(45deg,
+                    #ff6a00,
+                    #ffcc00,
+                    #00b300,
+                    #0055ff,
+                    #ff00cc,
+                    #ff0000,
+                    #f31b9c);
+            background-size: 600% 600%;
+            /* Increased size for smoother transition */
+            animation: gradientAnimation 2s infinite;
+            /* Slower animation for a smoother effect */
+            text-align: center;
+            /* Center the content inside */
+            margin: 20px auto;
+            /* Center horizontally and add space at the top */
+            padding: 20px;
+            border: 2px solid #fff;
+            max-width: 800px;
+            /* Adjust the maximum width as needed */
+        }
+
+
+
+        .sections-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            /* Adjust the margin as needed */
+        }
+
+        .sections-container section {
+            margin: 0;
+            padding: 20px;
+            /* Add padding to create space inside the sections */
+            border-radius: 10px;
+            /* Add rounded corners to the sections */
+            flex: 1;
+            text-align: center;
+            /* Center the text inside the sections */
+            transition: background-color 0.5s ease-in-out;
+            /* Smoother background color transition */
+            cursor: pointer;
+        }
+
+        .sections-container section:hover {
+            background-color: rgba(0, 0, 0, 0.2);
+            /* Change the background color on hover */
+        }
+
+        /* Add CSS for section heading styles */
+        section h2 {
+            font-size: 20px;
+            color: #fff;
+            /* Text color */
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin: 0;
+            /* Remove margin to align text in the center */
+        }
+
+        /* Define background colors for each section */
+        #about {
+            background-color: #007bff;
+        }
+
+        #profile-analysis {
+            background-color: #28a745;
+        }
+
+        #faq {
+            background-color: #ffc107;
+        }
+
+        #contact-section {
+            background-color: #dc3545;
+        }
+
+        /* Add animation for background */
+        body {
+            background: linear-gradient(45deg, #ff0000, #05f105, #0000ff, #f31b9c, rgb(239, 239, 13));
+            background-size: 400% 400%;
+            animation: gradientAnimation 2s infinite;
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        #login{
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="sections-container">
+        <section id="about">
+            <h2>About Us</h2>
+        </section>
+
+        <section id="profile-analysis">
+            <h2>Profile Analysis</h2>
+        </section>
+
+        <section id="faq">
+            <h2>FAQs</h2>
+        </section>
+
+        <section id="contact-section" class="container">
+            <h2>Contact Us</h2>
+        </section>
+
+        <section id="contact-section" class="container">
+            <h2><a href="SignupLogin/signuplogin.html" id="login">LOGIN/SIGNUP</a></h2>
+        </section>
+    </div>
+
+    <section class="container profile-analysis-section animated-bg">
+        <h2>Profile Analysis</h2>
+        <p>Our advanced machine learning system can help you determine the authenticity of a social media profile.
+            Enter the profile data below, and we'll provide an analysis:</p>
+        <div class="tabs">
+            <div class="tab-button" onclick="openTab('tab1')">Analysis</div>
+            <div class="tab-button" onclick="openTab('tab2')">Tips</div>
+        </div>
+        <div id="tab1" class="tab-content">
+            <form id="profileAnalysisForm">
+                <div class="form-group">
+                    <label for="profileData">Profile Data</label>
+                    <textarea id="profileData" rows="6" placeholder="Paste or type the profile data here..."></textarea>
+                </div>
+                <div class="form-group">
+                    <button id="analyzeButton" type="button">Analyze Profile</button>
+                </div>
+            </form>
+        </div>
+        <div id="tab2" class="tab-content hidden">
+            <h3>Tips for Profile Analysis</h3>
+            <ul>
+                <li>Provide as much profile data as possible for accurate analysis.</li>
+                <li>Watch out for inconsistencies in the profile information.</li>
+                <li>Pay attention to the quality of profile pictures and the presence of suspicious links.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact-section" class="container contact-section">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <p>If you have any questions or feedback, please feel free to get in touch with us:</p>
+        </div>
+        <div class="contact-icons">
+            <a href="mailto:fakesocialmeadiadetection@gmail.com" class="contact-icon">
+                <img src="email.png" alt="Email Icon" class="email-icon" width="32" height="32">
+            </a>
+            <a href="#" class="contact-icon">
+                <img src="twitter.png" alt="Twitter Icon" class="social-icon" width="32" height="32">
+            </a>
+            <a href="#" class="contact-icon">
+                <img src="instagram.png" alt="Instagram Icon" class="social-icon" width="32" height="32">
+            </a>
+            <a href="#" class="contact-icon">
+                <img src="facebook.png" alt="Facebook Icon" class="social-icon" width="32" height="32">
+            </a>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

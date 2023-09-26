@@ -1,0 +1,281 @@
+/* styles.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+section {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+nav.navbar {
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+
+.header-title {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.header-title h1 {
+  margin: 0;
+}
+
+ul.menu {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+ul.menu li {
+  margin-right: 20px;
+}
+
+ul.menu li a {
+  text-decoration: none;
+  color: white;
+}
+
+header {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+main {
+  padding: 20px;
+}
+
+.tabs {
+  display: flex;
+}
+
+.tab-button {
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  margin-right: 10px;
+}
+
+.tab-content {
+  border: 1px solid white;
+  padding: 20px;
+}
+
+.tab-content.hidden {
+  display: none;
+}
+
+/* CSS for the Profile Analysis section */
+.profile-analysis-section {
+  background-color: #f5f5f5; /* Light gray background */
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 20px; /* Add some padding */
+}
+
+.profile-analysis-section h2 {
+  font-size: 24px;
+  color: #333; /* Dark text color */
+  margin-bottom: 10px; /* Adjust margin as needed */
+}
+
+.profile-analysis-section p {
+  font-size: 16px;
+  color: #555; /* Gray text color */
+}
+
+.tabs {
+  display: flex;
+  margin-top: 20px; /* Add margin between content and tabs */
+}
+
+.tab-button {
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #007bff; /* Blue button background */
+  color: #fff; /* White text color */
+  margin-right: 10px;
+  border: none; /* Remove button border */
+  border-radius: 5px; /* Rounded corners */
+}
+
+.tab-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.tab-content {
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 20px; /* Add some padding */
+  margin-top: 10px; /* Add margin between tabs and content */
+}
+
+.tab-content h3 {
+  font-size: 20px;
+  color: #333; /* Dark text color */
+  margin-bottom: 10px; /* Adjust margin as needed */
+}
+
+.tab-content ul {
+  list-style-type: disc; /* Use bullet points for the list */
+  margin-left: 20px; /* Add some margin to the left of the list */
+}
+
+.form-group {
+  margin-bottom: 20px; /* Add space between form groups */
+}
+
+textarea {
+  width: 100%; /* Make the textarea expand to full width */
+  padding: 10px; /* Add padding to the textarea */
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 5px; /* Rounded corners */
+}
+
+button#analyzeButton {
+  background-color: #007bff; /* Blue button background */
+  color: #fff; /* White text color */
+  border: none; /* Remove button border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button#analyzeButton:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* CSS for the moving background color effect */
+.animated-bg {
+  background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff, #ff0000);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* CSS for the Contact Us section */
+.contact-section {
+  background: linear-gradient(
+    45deg,
+    #0b48ca87,
+    #09cc0c,
+    rgba(228, 9, 180, 0.803)
+  );
+  padding: 20px;
+  border: 2px solid #fff;
+  margin: 0;
+  text-align: center; /* Center-align text content */
+  color: white; /* Text color */
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Adjust as needed */
+}
+
+.contact-icon {
+  margin-right: 10px;
+}
+
+.sections-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  /* Adjust the margin as needed */
+}
+
+.sections-container section {
+  margin: 0;
+  padding: 20px; /* Add padding to create space inside the sections */
+  border-radius: 10px; /* Add rounded corners to the sections */
+  flex: 1;
+  text-align: center; /* Center the text inside the sections */
+  transition: background-color 0.5s ease-in-out; /* Smoother background color transition */
+  cursor: pointer;
+}
+
+.sections-container section:hover {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.2
+  ); /* Change the background color on hover */
+}
+
+/* Add CSS for section heading styles */
+section h2 {
+  font-size: 20px;
+  color: #fff;
+  /* Text color */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0;
+  /* Remove margin to align text in the center */
+}
+
+/* Define background colors for each section */
+#about {
+  background-color: #007bff;
+}
+
+#profile-analysis {
+  background-color: #28a745;
+}
+
+#faq {
+  background-color: #ffc107;
+}
+
+#contact-section {
+  background-color: #dc3545;
+}
+
+/* Add animation for background */
+body {
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #05f105,
+    #0000ff,
+    #f31b9c,
+    rgb(239, 239, 13)
+  );
+  background-size: 400% 400%;
+  animation: gradientAnimation 2s infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
